@@ -1,0 +1,210 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset=""UTF-8">
+        <title>BEACON Project</title>
+        <meta name="viewport" content="width=device-width,initial-scale=1.0">
+        <link rel="stylesheet" href="styles.css">
+        <link href="https://fonts.googleapis.com/css2?family=DM+Serif+Display:ital@0;1&family=DM+Sans:wght@300;400;500&display=swap" rel="stylesheet" />
+        <link rel="preconnect" href="https://fonts.googleapis.com"/>
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin/>
+        <script src="script.js" defer></script>
+    </head>
+    <body>
+
+        <div class="hero-header">
+            <a href="#home" class="logo">BEACON</a>
+        </div>
+
+        <nav id="site-nav">
+            <a href="#home">Home</a>
+            <a href="#about-us">About us</a>
+            <a href="#project">Project</a>
+            <a href="#documents">Documents</a>
+            <a href="#committee">Committee</a>
+            <a href="#advisor">Advisor</a>
+        </nav>
+        
+        <section id="home">
+            <h1 class="hero-headline ">Ride Safely</h1>
+            <!-- will add photos of project here -->
+             <img src="Assets/Images/ride-safe-placehodler.jpg" alt="placeholder image" class="home-image"/>
+        </section>
+       
+        <section id="about-us">
+            <p class="section-tag reveal">About Us</p>
+            <h2 class="section-title reveal" style="transition-delay:0.01s">Meet the team behind BEACON</h2>
+            <p class="section-body reveal" style="transition-delay:0.02s">A small, focused team of engineers building the future of bicycle safety</p>
+
+            <div class="team-grid">
+                <div class="team-card reveal" style="transition-delay:0.05s" data-photo="Assets/Images/Ben-photo.jpg">
+                    <div class="team-name">Benjamin Eppl</div>
+                    <div class="team-role">Electrical Engineer</div>
+                </div>
+                <div class="team-card reveal" style="transition-delay:0.05s" data-photo="Assets/Images/Sarah-picture.jpg">
+                    <div class="team-name">Sarah McDonald</div>
+                    <div class="team-role">Electrical Engineer</div>
+                </div>
+                <div class="team-card reveal" style="transition-delay:0.05s" data-photo="Assets/Images/Trevor-photo.png">
+                    <div class="team-name">Trevor Mongar</div>
+                    <div class="team-role">Computer Engineer</div>
+                </div>
+                <div class="team-card reveal" style="transition-delay:0.05s" data-photo="Assets/Images/Mia-picture.jpg">
+                    <div class="team-name">Mia Shoemaker</div>
+                    <div class="team-role">Electrical Engineer</div>
+                </div>
+            </div>
+            <div class="team-photo-preview" id="team-photo-preview">
+                <img id="team-photo-img" src="" alt=""/>
+            </div>
+        </section>
+
+        <section id="project">
+            <div class="project-layout reveal" style="transition-delay:0.3s">
+                <div class="project-text">
+                    <p class="section-tag reveal">Project</p>
+                    <h2 class="section-title reveal" style="transition-delay:0.1s">What is BEACON?</h2>
+                    <p class="section-body reveal" id="project-summary" style="transition-delay:0.2s">
+                        Bicycle Electronic Awareness and Communication On-road Network, or "BEACON", is an all-in-one
+                        bicycle-mounted safety system. Designed to improve rider visibility, safety, and communication
+                        with other nearby drivers and pedestrians. Containing an automatic brake light system, left 
+                        and right turning signals through handlebar controls, an onboard display for rider analytics, and a 
+                        rapidly approaching rear-object warning system.
+                    </p>
+                </div>
+                <div class="project-carousel-wrap">
+                    <div class="carousel">
+                        <button class="carousel-btn" id="carousel-prev">&#8592;</button>
+
+                        <div class="carousel-track-wrap">
+                            <div class="carousel-track" id="carousel-track">
+                                <div class="carousel-slide">
+                                    <img src="Assets/Images/bike_image1.png" alt="Software Rendering of BEACON design"/>
+                                    <div class="carousel-caption">Initial design for BEACON</div>
+                                </div>
+
+                                <div class="carousel-slide">
+                                    <img src="Assets/Images/bike2.png" alt="Software Rendering of BEACON design"/>
+                                    <div class="carousel-caption">Initial Design for BEACON</div>
+                                </div>
+
+                                <div class="carousel-slide">
+                                    <img src="Assets/Images/Front_Diagram.png" alt="Software rendering of front of BEACON design"/>
+                                    <div class="carousel-caption">New Design for BEACON with Descriptions (front)</div>
+                                </div>
+
+                                <div class="carousel-slide">
+                                    <img src="Assets/Images/Back_Diagram.png" alt="Software rendering of back of BEACON design"/>
+                                    <div class="carousel-caption">New Design for BEACON with Descriptions (back)</div>
+                                </div>
+
+                                <div class="carousel-slide">
+                                    <img src="Assets/Images/BEACON-models.png" alt="Collection of assorted software renderings"/>
+                                    <div class="carousel-caption">All Software Renderings of BEACON</div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <button class="carousel-btn" id="carousel-next">&#8594;</button>
+                    </div> 
+                    <div class="carousel-dots" id="carousel-dots"></div>
+            </div>
+        </section>
+
+        <section id="documents">
+            <p class="section-tag reveal">Documents</p>
+            <h2 class="section-title reveal" style="transition-delay:0.1s">Senior Design Deliverables</h2>
+            <p class="section-body reveal">Browse our team's reports and demo videos</p>
+
+            <div class="docs-layout reveal" style="transition-delay:0.3s">
+                <div class="docs-list">
+                    
+
+                    <div class="doc-card" data-pdf="Assets/Documents/Group 9 Divide and Conquer RevisedV2.pdf">
+                        <div class="doc-name">Divide and Conquer Report</div>
+                        <div class="doc-role">Our initial project proposal</div>
+                    </div> 
+
+                    <div class="doc-card" data-pdf="">
+                        <div class="doc-name">Midterm Milestone Report</div>
+                        <div class="doc-role">To be Posted</div>
+                    </div>
+
+                    <div class="doc-card" data-pdf="">
+                        <div class="doc-name">Final Report</div>
+                        <div class="doc-role">To be Posted</div>
+                    </div>
+
+                    <div class="doc-card" data-pdf="">
+                        <div class="doc-name">Mini Demo Video</div>
+                        <div class="doc-role">To be Posted</div>
+                    </div>
+                </div>
+
+                <div class="docs-preview" id="docs-preview">
+                    <div class="docs-placeholder" id="docs-placeholder">
+                        <span>Select an item to preview</span>
+                    </div>
+
+                    <p class="docs-empty" id="docs-empty">No Documents Available</p>
+                    
+                    <iframe id="docs-iframe" src="" style="display:none;"></iframe>
+                </div>
+            </div>
+        </section>
+
+        <section id="committee">
+            <p class="section-tag reveal">Committee</p>
+            <h2 class="section-title reveal" style="transition-delay:0.01s">Our Review Committee</h2>
+            <p class="section-body reveal">The members of our project's review committee</p>
+            
+            <div class="committee-grid reveal" style="transition-delay:0.3s">
+
+                <div class="committee-member">
+                    <div class="committee-card">
+                        <div class="committee-name">
+                            <h3>Dr. Hadi Kamali</h3>
+                        </div>
+                        <div class="committee-title"><i>ECE - Assistant Professor</i></div>
+                    </div>
+                    <img src="Assets/Images/Hadi-M.-Kamali.jpg" alt="Dr. Kamali Photo" class="committee-photo"/>
+                </div>
+
+                <div class="committee-member">
+                    <div class="committee-card">
+                        <div class="committee-name">
+                            <h3>Dr. George Atia</h3>
+                        </div>
+                        <div class="committee-title"><i>ECE - Professor</i></div>
+                    </div>
+                    <img src="Assets/Images/George-Atia.jpg" alt="Dr. Altia Photo" class="committee-photo"/>
+                </div>
+
+                <div class="committee-member">
+                    <div class="committee-card">
+                        <div class="committee-name">
+                            <h3>Dr. Sonali Das</h3>
+                        </div>
+                        <div class="committee-title"><i>ECE - Lecturer</i></div>
+                    </div>
+                    <img src="Assets/Images/Sonali-Das.jpg" alt="Dr. Das Photo" class="committee-photo"/>
+                </div>
+            </div>
+        </section>
+
+        <section id="advisor">
+            <p class="section-tag reveal">Advisors</p>
+            <h2 class="section-title reveal" style="transition-delay:0.1s">Advisor for the BEACON project</h2>
+            <p class="section-body reveal">The ECE faculty who helped guide us along the way</p>
+            <div class="advisor-feature reveal" style="transition-delay:0.1s">
+                <div class="advisor-photo">
+                    <img src="Assets/Images/Saleem-Sahawneh.jpg" alt="Dr. Sahawneh Photo" class="advisor-photo"/>
+                </div>
+                <div class="advisor-info">
+                    <h2 class="advisor-name">Dr. Saleem Sahawneh</h2>
+                    <p class="advisor-title"><i>ECE - Lecturer</i></p>
+                </div>
+            </div>
+        </section>
+    </body>
+</html>
