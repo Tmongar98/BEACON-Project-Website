@@ -79,17 +79,29 @@ docCards.forEach(card => {
     card.addEventListener('click', () => {
         docCards.forEach(c => c.classList.remove('active'));
         card.classList.add('active');
+        
+        const type = card.dataset.type;
+        const src = card.dataset.src;
 
-        const pdf = card.dataset.pdf;
-        if(!pdf || pdf.trim() === '') {
+        //const pdf = card.dataset.pdf;
+        if(!src || src.trim() === '') {
             docsIFrame.style.display = 'none';
             docsPlaceholder.style.display = 'none';
             docsEmpty.style.display = 'block';
+            return;
+        } 
+
+        docsIFrame.src = src;
+        docsIFrame.style.display = 'block';
+        docsPlaceholder.style.display = 'none';
+        docsEmpty.style.display = 'none';
+
+        if(type === 'video'){
+            docsIFrame.setAttribute('allow', 'accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture');
+            docsIFrame.setAttribute('allowfullscreen', '');
         } else {
-            docsIFrame.src = pdf;
-            docsIFrame.style.display = 'block';
-            docsPlaceholder.style.display = 'none';
-            docsEmpty.style.display = 'none';
+            docsIFrame.removeAttribute('allow');
+            docsIFrame.removeAttribute('allowfullscreen');
         }
     });
 });
